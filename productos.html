@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike - Productos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+    }
+    nav {
+      background: #111;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+    nav a:hover {
+      color: #e60023;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product-card h3 {
+      margin: 0.8rem 0;
+    }
+    .product-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .price {
+      color: #e60023;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .btn-comprar {
+      background: #e60023;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-comprar:hover {
+      background: #c1001d;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="brand">Nike</div>
+    <div>
+      <a href="marca de tenis (1).html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Catálogo de Productos</h1>
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="https://sneakernews.com/wp-content/uploads/2023/02/tiffany-nike-air-force-1-DZ1382-001-release-date.jpg" alt="Nike Air Force">
+        <h3>Nike Air Force</h3>
+        <p>Zapatilla clásica con estilo atemporal y comodidad premium.</p>
+        <p class="price">$2,299 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eb642ee-808d-44b8-acef-13dd4dd3740a/pegasus-40-road-running-shoes-5GQzRw.png" alt="Nike Pegasus">
+        <h3>Nike Pegasus</h3>
+        <p>Perfectas para correr largas distancias con amortiguación reactiva.</p>
+        <p class="price">$2,599 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.eC43qUE0Ad1kdRq14BNNbwHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nike Zoom Fly 5">
+        <h3>Nike Zoom Fly 5</h3>
+        <p>Velocidad y tecnología avanzada para atletas competitivos.</p>
+        <p class="price">$3,199 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 4 -->
+      <div class="product-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.WuSbJPXYQnl1B5JRBdpTgQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nike Blazer Mid 77">
+        <h3>Nike Blazer Mid 77</h3>
+        <p>Un clásico retro renovado, perfecto para looks urbanos.</p>
+        <p class="price">$1,999 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 5 -->
+      <div class="product-card">
+        <img src="https://sneakerbardetroit.com/wp-content/uploads/2022/12/Air-Jordan-1-High-OG-Washed-Black-DZ5485-051-Release-Date.jpg" alt="Air Jordan 1">
+        <h3>Air Jordan 1</h3>
+        <p>Ícono del baloncesto, diseño clásico y confort excepcional.</p>
+        <p class="price">$3,499 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 6 -->
+      <div class="product-card">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62e0a964-cf94-4648-a372-b4e0e10fe4be/metcon-9-workout-shoes-ldMsxB.png" alt="Nike Metcon 9">
+        <h3>Nike Metcon 9</h3>
+        <p>Estabilidad y soporte para entrenamientos de alta intensidad.</p>
+        <p class="price">$2,899 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 7 -->
+      <div class="product-card">
+        <img src="https://sneakernews.com/wp-content/uploads/2023/05/nike-dunk-low-australia-release-date.jpg" alt="Nike Dunk Low">
+        <h3>Nike Dunk Low</h3>
+        <p>Inspiración skate, con estilo versátil para todos los días.</p>
+        <p class="price">$2,799 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 8 -->
+      <div class="product-card">
+        <img src="https://images.stockx.com/360/Nike-Air-Max-270-Summer-Gradient/Images/Nike-Air-Max-270-Summer-Gradient/Lv2/img01.jpg?fm=webp&auto=compress&w=480&dpr=2&updated_at=1635259131&h=320&q=60" alt="Nike Air Max 270">
+        <h3>Nike Air Max 270</h3>
+        <p>Amortiguación máxima y diseño moderno para uso diario.</p>
+        <p class="price">$3,099 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+      <!-- Producto 9 -->
+      <div class="product-card">
+        <img src="https://sneakernews.com/wp-content/uploads/2023/05/nike-react-infinity-run-4-DR2670-102.jpg" alt="Nike React Infinity Run">
+        <h3>Nike React Infinity Run</h3>
+        <p>Diseñadas para reducir lesiones y brindar una pisada suave.</p>
+        <p class="price">$3,199 MXN</p>
+        <button class="btn-comprar">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
